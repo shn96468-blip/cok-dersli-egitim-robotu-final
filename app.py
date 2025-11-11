@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 import time
 
 # --- YÖNETİCİ GİRİŞİ AYARLARI VE OTURUM BAŞLATMA ---
@@ -177,4 +177,5 @@ def general_chat_kanka(kullanici_mesaji):
     # 1. ÇEVİRİ KONTROLÜ (Tek kelime ise veya kelime 'çevir' ile başlıyorsa)
     
     # 'çevir elma' veya sadece 'elma' gibi durumlarda çeviri yap
+
     if len(kelimeler) == 1 and (kelimeler[0] in basit_sozluk or kelimeler[0] in [v.lower() for v in basit_soz
